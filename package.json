@@ -7,6 +7,7 @@
   "repository": "https://github.com/sonroyaalmerol/node-addu-sis",
   "author": "Son Roy Almerol",
   "dependencies": {
+    "cheerio": "^1.1.0",
     "fastify": "^3.20.2",
     "fastify-auth": "^1.1.0",
     "fastify-basic-auth": "^2.1.0",
@@ -18,6 +19,16 @@
     "querystring": "^0.2.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "@types/bun": "latest"
+  },
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun run dev/parser-registration.js",
+    "test": "bun test",
+    "node-dev": "node dev/parser-registration.js"
   }
 }

@@ -1,9 +1,10 @@
 node_modules/
 chromeData/
 .env
+.prettierrc
 
 .vscode/
 
 package-lock.json
 
-test.js
+test-pages/
